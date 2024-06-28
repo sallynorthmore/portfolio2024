@@ -36,8 +36,8 @@ const Layout = ({ pageTitle, children }) => {
             </Link>
           </li>
           <li>
-            <Link to="/blog">
-              Blog
+            <Link to="/projects">
+              Projects
             </Link>
           </li>
         </ul>

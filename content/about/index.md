@@ -7,7 +7,7 @@ title: About
 
 ## Work
 
-I have worked in digital for ten+ years and specialise in building beautiful, organised, accessible interfaces and team leadership.
+I have worked in digital for 15 years and specialise in building beautiful, organised, accessible interfaces and team leadership.
 
 I like to work on a range of ventures, from smaller, visually creative storytelling projects to large, thoughtful, design systems.
 

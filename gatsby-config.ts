@@ -50,12 +50,18 @@ const config: GatsbyConfig = {
       "path": "./src/images/"
     },
     __key: "images"
-  },
+  }, {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `projects`,
+        path: `${__dirname}/content/projects`,
+      }
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
+        name: `about`,
+        path: `${__dirname}/content/about`,
       }
     }, {
       // keep as first gatsby-source-filesystem plugin for gatsby image support

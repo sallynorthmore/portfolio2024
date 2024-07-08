@@ -45,11 +45,11 @@ const Layout = ({ pageTitle, children }) => {
       <main>
         <h1>{pageTitle}</h1>
         {children}
-        <StaticImage
+        {/* <StaticImage
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
         src="../images/icon.png"
-        // src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
-      />
+        src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
+       /> */}
       </main>
     </div>
   )

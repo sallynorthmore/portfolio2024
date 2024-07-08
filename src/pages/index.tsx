@@ -1,30 +1,23 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import { StaticImage } from 'gatsby-plugin-image'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import Seo from '../components/Seo'
+import ProjectGrid from '../components/ProjectGrid'
+import BaseStyles from '../components/BaseStyles';
 
 
 const IndexPage: React.FC<PageProps> = ({data}) => {
   return (
+    <>
+    <BaseStyles />
     <main>
       <Layout pageTitle="Homepage">
         <p>I’m a Fullstack engineer with 15 years of studio, agency, and start-up experience delivering world class digital experiences. I love building scalable, clean software, engineering teams and driving process.</p>
-        <div>
-          {
-        data.allMdx.nodes.map(node => (
-          <article key={node.id}>
-            <Link to={`/${node.frontmatter.slug}`} title={`${node.frontmatter.title} ${node.frontmatter.date}` } >
-              <img src={node.frontmatter.thumbnail}  alt={`${node.frontmatter.title} thumbnail` }
-              />
-            </Link>
-          </article>
-        ))
-      }
-        </div>
-        </Layout>
+        <ProjectGrid items={data.allMdx.nodes} />
+      </Layout>
     </main>
+    </>
   )
 }
 

@@ -1,7 +1,6 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-export default function BaseStyles() {
-	return injectGlobal`
+const BaseStyles = createGlobalStyle`
 		@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 		@import url("https://use.typekit.net/kox2esi.css");
 
@@ -33,4 +32,5 @@ export default function BaseStyles() {
 
 		/* stylelint-enable */
 	`;
-}
+
+export default BaseStyles;

@@ -1,3 +1,6 @@
+There is a known bug requires `npm i [package-name] --legacy-peer-deps`
+see https://github.com/gatsbyjs/gatsby/issues/38928
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />

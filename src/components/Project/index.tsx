@@ -1,6 +1,5 @@
 import React from "react";
 // import Helmet from "react-helmet";
-// import Banner from '../Banner';
 // import ProjectLinks from '../ProjectLinks';
 import * as S from "./styles";
 
@@ -23,7 +22,7 @@ export const Project = ({
       {/* <Helmet title={`Project: ${title}`} /> */}
       <S.ProjectBanner>
         {/* {location} */}
-        {/* <Banner  /> */}
+
       </S.ProjectBanner>
 
       <S.Inner>

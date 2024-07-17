@@ -16,5 +16,5 @@ export const Text = styled.p`
   font-weight: 300;
   margin: 1rem auto 0 0;
   max-width: 50rem;
-  padding: 0 2vw;
+  padding: 0;
 `

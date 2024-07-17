@@ -78,9 +78,9 @@ export const Client = styled.span`
 
 export const Description = styled.p`
 	color: rgb(20, 20, 20);
-	font-family: 'adobe-garamond-pro';
-	font-size: 25px;
-	font-weight: 600;
+	font-family: 'Lato';
+	font-size: 1rem;
+	font-weight: 400;
 	letter-spacing: -0.01em;
 	line-height: 1.3;
 	margin-top: 6vw;
@@ -90,17 +90,15 @@ export const Description = styled.p`
 export const Body = styled.div`
 	color: #666;
 	font-size: 1rem;
-
 	font-weight: 400;
-	letter-spacing: 0.04em;
-	line-height: 18px;
 	max-width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 
 	& p {
-		color: inherit;
-		font-family: 'adobe-garamond-pro';
+		font-family: 'Lato';
+    font-size: 1rem;
+    font-weight: 400;
 		margin-top: 3rem;
 	}
 

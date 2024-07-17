@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const BaseStyles = createGlobalStyle`
-		@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
-		@import url("https://use.typekit.net/kox2esi.css");
 
 		/* Minimal reset that keeps insepector output clean */
 		/* stylelint-disable selector-max-universal, selector-max-type  */

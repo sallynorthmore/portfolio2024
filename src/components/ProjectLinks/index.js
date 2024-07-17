@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+// import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import { ProjectLinksComponent, Button } from './styles';
 
 class ProjectLinks extends React.Component {
-	componentDidMount = () => {
-		window.addEventListener('keydown', this.handleKeyDown, false);
-	};
+	// componentDidMount = () => {
+	// 	window.addEventListener('keydown', this.handleKeyDown, false);
+	// };
 
-	componentWillUnmount() {
-		window.removeEventListener('keydown', this.handleKeyDown);
-	}
+	// componentWillUnmount() {
+	// 	window.removeEventListener('keydown', this.handleKeyDown);
+	// }
 
 	goNext = () => navigate(this.props.next.fields.slug);
 
@@ -33,14 +33,14 @@ class ProjectLinks extends React.Component {
 				{previous && (
 					<Button to={previous.fields.slug}>
 						<abbr title="Previous project">
-							<MdChevronLeft />{' '}
+							{/* <MdChevronLeft />{' '} */}
 						</abbr>
 					</Button>
 				)}
 				{next && (
 					<Button to={next.fields.slug}>
 						<abbr title="Next project">
-							<MdChevronRight />
+							{/* <MdChevronRight /> */}
 						</abbr>
 					</Button>
 				)}

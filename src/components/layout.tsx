@@ -1,13 +1,8 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql,  } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
-// import {
-//   container,
-//   heading,
-//   navLinks,
-//   navLinkItem,
-//   navLinkText
-// } from './layout.module.css'
+import {  useStaticQuery, graphql,  } from 'gatsby'
+import Banner from "./Banner";
+// import { StaticImage } from 'gatsby-plugin-image'
+
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -22,28 +17,9 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div>
-      <header>{data.site.siteMetadata.title}</header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects">
-              Projects
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <Banner title={data.site.siteMetadata.title} />
       <main>
-        <h1>{pageTitle}</h1>
+        {pageTitle && <h1>{pageTitle}</h1>}
         {children}
         {/* <StaticImage
         alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
@@ -52,7 +28,7 @@ const Layout = ({ pageTitle, children }) => {
        /> */}
       </main>
     </div>
-  )
+  );
 }
 
 export default Layout

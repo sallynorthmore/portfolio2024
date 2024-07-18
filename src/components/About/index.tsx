@@ -8,8 +8,8 @@ const About: React.FC = () => {
       <TypedText />
       <S.Text>
         I make beautiful, user-friendly applications with stable, clean code.
-        With over 10 years of product, studio, agency, and start-up experience delivering
-        world-class digital. I love building scalable software &amp; engineering teams, and driving process.
+        With over 10 years of big-tech, product, studio, agency, and start-up experience delivering
+        world-class digital, I love to build scalable software &amp; engineering teams, and drive great engineering process.
       </S.Text>
     </S.About>
   );

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {  useStaticQuery, graphql,  } from 'gatsby'
-import Banner from "./Banner";
+import Banner from "../Banner";
 // import { StaticImage } from 'gatsby-plugin-image'
 
 

@@ -9,8 +9,8 @@ const Banner: React.FC = ({title}) => {
         <Link to="/">{title}</Link>
       </S.Title>
       <S.Links role="navigation">
-        <S.Link to="#work">Work</S.Link>
-        <S.Link to="#contact">Contact</S.Link>
+        <S.Link to="/#work">Work</S.Link>
+        <S.Link to="/#contact">Contact</S.Link>
       </S.Links>
     </S.BannerComponent>
   );

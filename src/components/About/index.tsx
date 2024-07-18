@@ -7,10 +7,9 @@ const About: React.FC = () => {
     <S.About>
       <TypedText />
       <S.Text>
-        I make beautiful, user-friendly applications with stable, scalable code.
-        With over 10 years of studio, agency, and start-up experience delivering
-        world class digital experiences. I love building scalable, clean
-        software, engineering teams and driving process.
+        I make beautiful, user-friendly applications with stable, clean code.
+        With over 10 years of product, studio, agency, and start-up experience delivering
+        world-class digital. I love building scalable software &amp; engineering teams, and driving process.
       </S.Text>
     </S.About>
   );

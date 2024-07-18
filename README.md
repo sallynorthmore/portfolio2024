@@ -1,3 +1,11 @@
+# Sally Northmore Portfolio
+
+- GatsbyJS TypeScript
+- File based content (MDX)
+- Netlify Deployments (https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/deploying-to-netlify/)
+- Styled Components
+- ESLint, Prettier
+
 There is a known bug requires `npm i [package-name] --legacy-peer-deps`
 see https://github.com/gatsbyjs/gatsby/issues/38928
 

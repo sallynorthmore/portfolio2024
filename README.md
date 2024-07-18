@@ -6,8 +6,10 @@
 - Styled Components
 - ESLint, Prettier
 
-There is a known bug requires `npm i [package-name] --legacy-peer-deps`
-see https://github.com/gatsbyjs/gatsby/issues/38928
+There is a known bug requires `npm i [package-name] --legacy-peer-deps` for all pkg installs
+(see https://github.com/gatsbyjs/gatsby/issues/38928)
+
+There is an npm flag set in Netlify to manage this for builds
 
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">

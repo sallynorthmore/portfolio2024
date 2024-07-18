@@ -25,7 +25,7 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-styled-components",
+  plugins: [`gatsby-plugin-styled-components`, `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -68,42 +68,6 @@ const config: GatsbyConfig = {
             file: `https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900`,
           },
         ],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-eslint",
-      options: {
-        // Gatsby required rules directory
-        rulePaths: [gatsbyRequiredRules],
-        // Default settings that may be omitted or customized
-        stages: ["develop"],
-        extensions: ["js", "jsx", "ts", "tsx"],
-        exclude: ["node_modules", "bower_components", ".cache", "public"],
-        // Any additional eslint-webpack-plugin options below
-        // ...
-      },
-    },
-    {
-      resolve: "gatsby-plugin-prettier-eslint",
-      options: {
-        prettier: {
-          patterns: [
-            // the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
-            "**/*.{css,scss,less}",
-            "**/*.{json,json5}",
-            "**/*.{graphql}",
-            "**/*.{md,mdx}",
-            "**/*.{html}",
-            "**/*.{yaml,yml}",
-          ],
-        },
-        eslint: {
-          patterns: "**/*.{js,jsx,ts,tsx}",
-          customOptions: {
-            fix: true,
-            cache: true,
-          },
-        },
       },
     },
     {

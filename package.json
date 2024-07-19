@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint:css": "stylelint src/**/*.styles.ts --color"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.1",
@@ -35,10 +36,13 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "styled-components": "^6.1.11",
+    "stylelint": "^16.7.0",
+    "stylelint-config-recommended": "^14.0.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-declaration-use-variable": "^1.7.3",
     "stylelint-no-unsupported-browser-features": "^8.0.1",
-    "stylelint-order": "^6.0.4"
+    "stylelint-order": "^6.0.4",
+    "stylelint-processor-styled-components": "^1.10.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
